@@ -12,7 +12,11 @@ export default function Home() {
             My App
           </span>
         </div>
-
+<div className='text-black  flex gap-20 text-2xl'>
+  <h1 className='bg-white rounded-lg hover:bg-gray-500 cursor-pointer w-21 h-8'>Header</h1>
+   <h1 className='bg-white rounded-lg hover:bg-gray-500 cursor-pointer w-21 h-8'>About</h1>
+    <h1 className='bg-white rounded-lg hover:bg-gray-500 cursor-pointer w-21 h-8'>Contact</h1>
+</div>
         <div className="flex items-center gap-3">
           <SignInButton mode="modal">
             <button className="px-4 py-2 text-sm font-medium text-gray-700 bg-white border border-gray-300 rounded-lg hover:bg-gray-50 transition-colors">
