@@ -5,7 +5,7 @@ import { FaInstagram, FaTwitter, FaDiscord, FaBalanceScale } from 'react-icons/f
 export default function Home() {
   return (
     <div>
-      {/* Sizning original Header kodingiz (hech narsa o'zgartirilmadi) */}
+    
       <header className="flex items-center justify-between px-6 py-4 bg-white shadow-md border-b border-gray-100">
         <div className="flex items-center gap-2">
           <span className="text-xl font-bold text-gray-800">
@@ -30,7 +30,7 @@ export default function Home() {
         </div>
       </header>
 
-      {/* Hero qism */}
+     
       <section className="relative w-full min-h-screen flex items-center justify-center overflow-hidden">
         <img
           src={heroImage}
@@ -48,7 +48,34 @@ export default function Home() {
         </div>
       </section>
 
-      {/* YANGI YAXSHILANGAN ZAMONAVIY KARTLAR QISMI */}
+    
+      <section className="py-20 bg-gray-50 px-6">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center max-w-2xl mx-auto mb-16">
+            <h2 className="text-3xl font-bold text-gray-900 mb-4">Bizning Asosiy Xizmatlarimiz</h2>
+            <p className="text-gray-600">Sizning biznesingiz va kundalik vazifalaringizni avtomatlashtirish uchun eng yaxshi yechimlar.</p>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
+              <div className="w-12 h-12 bg-blue-100 text-blue-600 rounded-xl flex items-center justify-center font-bold text-xl mb-6">🚀</div>
+              <h3 className="text-xl font-semibold text-gray-900 mb-2">Tezkor Ishga Tushirish</h3>
+              <p className="text-gray-500 text-sm leading-relaxed">Loyihangizni qisqa fursatlarda tayyor holatga keltirib, foydalanuvchilarga taqdim etamiz.</p>
+            </div>
+            <div className="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
+              <div className="w-12 h-12 bg-purple-100 text-purple-600 rounded-xl flex items-center justify-center font-bold text-xl mb-6">💡</div>
+              <h3 className="text-xl font-semibold text-gray-900 mb-2">Innovatsion Yondashuv</h3>
+              <p className="text-gray-500 text-sm leading-relaxed">Eng so'nggi texnologiyalar va zamonaviy dizayn tamoyillaridan foydalanamiz.</p>
+            </div>
+            <div className="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
+              <div className="w-12 h-12 bg-green-100 text-green-600 rounded-xl flex items-center justify-center font-bold text-xl mb-6">🔒</div>
+              <h3 className="text-xl font-semibold text-gray-900 mb-2">Xavfsizlik va Ishonchlilik</h3>
+              <p className="text-gray-500 text-sm leading-relaxed">Ma'lumotlaringiz xavfsizligi eng yuqori darajada himoyalangan.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    
       <section className="max-w-7xl mx-auto px-6 py-20">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           
@@ -62,10 +89,10 @@ export default function Home() {
               key={index}
               className="group relative flex flex-col items-center justify-between bg-white p-7 rounded-3xl shadow-[0_10px_30px_rgba(0,0,0,0.05)] border border-gray-100 hover:shadow-[0_20px_40px_rgba(123,87,255,0.15)] hover:-translate-y-2 transition-all duration-300 overflow-hidden"
             >
-              {/* Tepasidagi yorug'lik gradient chizig'i */}
+           
               <div className="absolute top-0 left-0 right-0 h-1.5 bg-gradient-to-r from-purple-500 to-indigo-600 opacity-0 group-hover:opacity-100 transition-opacity"></div>
 
-              {/* Icon konteyneri */}
+             
               <div className="p-4 bg-purple-50 rounded-2xl group-hover:bg-purple-100 group-hover:scale-110 transition-all duration-300 mb-2">
                 <svg xmlSpace="preserve" viewBox="0 0 122.88 122.25" className="w-[42px] fill-[#7b57ff]">
                   <g>
@@ -74,7 +101,7 @@ export default function Home() {
                 </svg>
               </div>
 
-              {/* Matn qismi */}
+              
               <div className="text-center my-3">
                 <p className="text-lg font-bold text-gray-900">{card.title}</p>
                 <p className="text-xs text-gray-500 mt-2 leading-relaxed">
@@ -83,7 +110,7 @@ export default function Home() {
                 </p>
               </div>
 
-              {/* Tugmalar qismi */}
+              
               <div className="flex flex-row gap-3 w-full mt-4">
                 <button className="flex-1 py-2.5 cursor-pointer rounded-xl bg-[#7b57ff] font-semibold text-white text-xs hover:bg-[#6842e8] shadow-md shadow-purple-200 transition-all">
                   Allow
@@ -98,7 +125,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Sizning original Footer kodingiz (hech narsa o'zgartirilmadi) */}
+    
       <footer className="bg-[#0b0b0b] text-[#9e9e9e] px-6 py-12 md:px-16 text-sm font-sans">
         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10">
           <div className="flex flex-col gap-4">
